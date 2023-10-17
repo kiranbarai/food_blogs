@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <title>Goof food, Good Mood </title>
+    <link rel="icon" href="https://res.cloudinary.com/df786bjbc/image/upload/v1682832219/restaurant_qvdros.png">
+</head>
+
+<body>
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+
+    <!-- Nav Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-warning text-light">
+        <div class="container-fluid">
+            <!-- <a class="navbar-brand" href="/">GFGM</a> -->
+            <img class="" src="https://res.cloudinary.com/df786bjbc/image/upload/v1682832219/restaurant_qvdros.png" style="width: auto;height: 30px;"/>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Menu
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Veg</a></li>
+                            <li><a class="dropdown-item" href="#">Non-Veg</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Bakery</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#" tabindex="-1" aria-disabled="false">Contact</a>
+                    </li>
+                    <!-- 
+                      <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Contact</a>
+                    </li>
+                     -->
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2 bg-gray" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-danger " type="submit">Search</button>
+                </form>
+                <div class="mx-2">
+                    <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#signInModal">Sign in</button>
+                    <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#signUpModal">Sign up</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- modal start signin -->
+    
+    <div class="modal fade" id="signInModal" tabindex="-1" aria-labelledby="signInModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="signInModalLabel">Modal title</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3 row">
+                            <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+                            <div class="col-sm-10">
+                              <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="email@example.com">
+                            </div>
+                          </div>
+                          <div class="mb-3 row">
+                            <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+                            <div class="col-sm-10">
+                              <input type="password" class="form-control" id="inputPassword">
+                            </div>
+                          </div>
+                    </form>
+            
+                </div>
+                <div class="modal-footer">
+                <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+                <button type="button" class="btn btn-danger">Sign in</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- modal end signin -->
+    <!-- modal start signup -->
+    
+    
+    <div class="modal fade" id="signUpModal" tabindex="-1" aria-labelledby="signUpModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="signUpModalLabel">Create your account</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form class="row g-3">
+                        <div class="col-md-6">
+                          <label for="inputEmail4" class="form-label">Email</label>
+                          <input type="email" class="form-control" id="inputEmail4">
+                        </div>
+                        <div class="col-md-6">
+                          <label for="inputPassword4" class="form-label">Password</label>
+                          <input type="password" class="form-control" id="inputPassword4">
+                        </div>
+                        <div class="col-12">
+                          <label for="inputAddress" class="form-label">Address</label>
+                          <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                        </div>
+                        <div class="col-12">
+                          <label for="inputAddress2" class="form-label">Address 2</label>
+                          <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                        </div>
+                        <div class="col-md-6">
+                          <label for="inputCity" class="form-label">City</label>
+                          <input type="text" class="form-control" id="inputCity">
+                        </div>
+                        <div class="col-md-4">
+                          <label for="inputState" class="form-label">State</label>
+                          <select id="inputState" class="form-select">
+                            <option selected>Choose...</option>
+                            <option>
+                                kolkata
+                            </option>
+                          </select>
+                        </div>
+                        <div class="col-md-2">
+                          <label for="inputZip" class="form-label">Zip</label>
+                          <input type="text" class="form-control" id="inputZip">
+                        </div>
+                        <div class="col-12">
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="gridCheck">
+                            <label class="form-check-label" for="gridCheck">
+                              Check me out
+                            </label>
+                          </div>
+                        </div>
+                        <div class="col-12 modal-footer">
+                          <button type="submit" class="btn btn-danger ">Sign in</button>
+                        </div>
+                      </form>
+                </div>
+                <!-- <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Create</button>
+            </div> -->
+        </div>
+        </div>
+    </div>
+    <!-- modal end signup -->
+
+
+
+    <!-- alert dismiss -->
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+        <strong>Good Food, Good Mood!</strong> The people who give you their food give you their heart.
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+    <!-- slide carousel -->
+    <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://source.unsplash.com/800x300/?food" class="d-block w-100" alt="...">
+            <!-- <div class="carousel-caption d-none d-md-block">
+              <h5>First slide label</h5>
+              <p>Some representative placeholder content for the first slide.</p>
+            </div> -->
+          </div>
+          <div class="carousel-item">
+            <img src="https://source.unsplash.com/800x300/?food,cake" class="d-block w-100" alt="...">
+            <!-- <div class="carousel-caption d-none d-md-block">
+              <h5>Second slide label</h5>
+              <p>Some representative placeholder content for the second slide.</p>
+            </div> -->
+          </div>
+          <div class="carousel-item">
+            <img src="https://source.unsplash.com/800x300/?food,dasert" class="d-block w-100" alt="...">
+            <!-- <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>Some representative placeholder content for the third slide.</p>
+            </div> -->
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <br/>
+
+      <!-- central heading  -->
+      <div class="px-4 py-5 my-5 text-center">
+        <!-- <img class="d-block mx-auto mb-4" src="/docs/5.0/assets/brand/bootstrap-logo.svg" alt="" width="72" height="57"> -->
+        <h1 class="display-5 fw-bold text-danger">Kolkata Food's</h1>
+        <div class="col-lg-6 mx-auto">
+          <p class="lead mb-4 fst-italic">Kolkata, the capital of the Indian state of West Bengal, is famous for its rich and diverse culinary culture. From spicy street food to traditional Bengali cuisine, Kolkata has something to offer for everyone. Here are some of the famous Kolkata foods.</p>
+          <!-- <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+            <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Primary button</button>
+            <button type="button" class="btn btn-outline-secondary btn-lg px-4">Secondary</button>
+          </div> -->
+        </div>
+      </div></body><br/>
+
+
+      <!-- card view  -->
+
+      <div class="container">
+      <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="col">
+          <div class="card">
+            <img src="https://www.archanaskitchen.com/images/archanaskitchen/1-Author/Karthika_Gopalakrishnan/Aar_macher_Jhol.jpg" width="200" height="350" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Macher Jhol</h5>
+              <p class="card-text">Macher jhol is a popular fish curry that is commonly prepared in the eastern states of India, particularly in West Bengal, Assam, and Odisha. The dish is typically made with freshwater fish, such as rohu, catla, or hilsa, and a variety of spices and herbs.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="https://d4t7t8y8xqo0t.cloudfront.net/resized/750X436/eazytrendz/1112/trend20160617110012.jpg" width="200" height="350" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Kosha Mangsho</h5>
+              <p class="card-text">Kosha Mangsho is a traditional Bengali dish that originated in the Indian subcontinent. It is a slow-cooked spicy mutton curry that is typically served with rice or bread.</p>
+            </div>
+          </div>
+        </div>
+      
+        <div class="col">
+          <div class="card">
+            <img src=" https://res.cloudinary.com/df786bjbc/image/upload/v1682793129/60f2ea8177071d32005b1a91_kochurir_alur_torkari_1500_x_1200_tzlbul.jpg" width="200" height="350" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Alur Torkari</h5>
+              <p class="card-text">Alur torkari is a popular Bengali dish made with potatoes and a variety of spices. It is a common vegetarian dish in Kolkata, the capital city of the Indian state of West Bengal.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="https://akm-img-a-in.tosshub.com/lingo/atbn/images/story/202303/fotojet_-_2023-03-23t122029.904_0-sixteen_nine.jpg?size=948:533" width="200" height="350" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Mishti Doi</h5>
+              <p class="card-text">Misti dahi is a beloved dessert in Kolkata, the capital city of the Indian state of West Bengal. Kolkata is known for its rich culinary culture, and misti dahi is a popular sweet dish that is often enjoyed as a dessert after a meal or as a snack.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      </div>
+
+      <!-- footer div -->
+      <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+          <div class="col-md-4 d-flex align-items-center ">
+            <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+              <img src="https://res.cloudinary.com/df786bjbc/image/upload/v1682832219/restaurant_qvdros.png" width="40px" height="30px"/>
+            </a>
+            <span class="text-muted">© 2023 Good Food Good Mood, Inc</span>
+          </div>
+      
+          <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+            <li class="ms-3"><a class="text-muted" href="#"><img src="images\fb.png" width="20px" height="20px"/></a></li>
+            <li class="ms-3"><a class="text-muted" href="#"><img src="images\insta.png" width="20px" height="20px"/></a></li>
+            <li class="ms-3"><a class="text-muted" href="#"><img src="images\twt.png" width="20px" height="20px"/></li>
+            <li class="ms-3"><a class="text-muted" href="#"><img src="images\wtsapp.png" width="20px" height="20px"/></li>
+          </ul>
+        </footer>
+      </div>
+    <!-- <footer class="mt-4 container">
+        <p class="float-right"> <a href="#">Back to top </a> @ 2020-2023 GoodFoodGoodMood. <a href="#">Privacy</a>.<a href="#">Terms</a></p>
+    </footer> -->
+    
+</body>
+
+</html>
